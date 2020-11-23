@@ -1,0 +1,17 @@
+{
+  "name": "ipfs-interface-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "aegir test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aegir": "^29.0.1",
+    "interface-ipfs-core": "^0.142.1",
+    "ipfs-http-client": "^48.1.1",
+    "ipfsd-ctl": "^7.1.0"
+  }
+}
