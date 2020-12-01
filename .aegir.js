@@ -6,7 +6,6 @@ if (!process.env.GO_IPFS_PATH) {
 
 const { createServer } = require('ipfsd-ctl')
 const EchoServer = require('aegir/utils/echo-server')
-const path = require('path')
 
 let echoServer = new EchoServer()
 let ipfsdServer
@@ -42,7 +41,6 @@ module.exports = {
         }
       },
       post: async () => {
-        await preloadNode.stop(),
         await echoServer.stop()
       }
     },
@@ -66,7 +64,6 @@ module.exports = {
       },
       post: async () => {
         await ipfsdServer.stop()
-        await preloadNode.stop()
         await echoServer.stop()
       }
     }
